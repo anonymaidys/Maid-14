@@ -175,10 +175,10 @@
   - HeadOfSecurity
   - ResearchDirector
   - Quartermaster
-  - BlueshieldOfficer # Goobstation
-  - NanotrasenRepresentative # Goobstation
-  - NanotrasenCareerTrainer # Goobstation
-  - CentralCommandOfficial
+#  - BlueshieldOfficer # Goobstation
+#  - NanotrasenRepresentative # Goobstation
+#  - NanotrasenCareerTrainer # Goobstation
+#  - CentralCommandOfficial
   - CBURN
   - ERTLeader
   - ERTChaplain
