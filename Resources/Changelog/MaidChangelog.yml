@@ -21,3 +21,17 @@ Entries:
       message: Эмоуты пердежа
   id: 2
   time: '2025-10-01T09:11:24.0000000+00:00'
+- author: Warete
+  changes:
+    - type: Remove
+      message: Некоторые композиции из лобби
+    - type: Tweak
+      message: Спрайты шлюзов и их подсветка
+    - type: Tweak
+      message: Спрайты некоторых предметов
+    - type: Tweak
+      message: Русская озвучка объявлений
+    - type: Tweak
+      message: Выборка карт была урезана до 4-ёх
+  id: 3
+  time: '2025-10-02T18:44:20.0000000+00:00'
