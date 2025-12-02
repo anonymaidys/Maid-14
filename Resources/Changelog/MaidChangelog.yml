@@ -137,3 +137,11 @@ Entries:
       message: AdminWho для всех.
   id: 12
   time: '2025-12-01T19:43:03.0000000+00:00'
+- author: HSKveez
+  changes:
+    - type: Tweak
+      message: Рация рабоает с русскими ключами
+    - type: Tweak
+      message: Коллективные разумы работают с русскими ключами
+  id: 13
+  time: '2025-12-02T15:08:57.0000000+00:00'
