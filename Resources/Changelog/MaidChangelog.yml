@@ -193,3 +193,23 @@ Entries:
       message: Спринт.
   id: 17
   time: '2025-12-18T08:06:39.0000000+00:00'
+- author: Warete
+  changes:
+    - type: Add
+      message: Маршрутка на Атом.
+    - type: Add
+      message: Классические причёски.
+    - type: Tweak
+      message: Переделанный шаттл эвакуации для Вандера. - by pahan_chiiiil
+    - type: Tweak
+      message: Были затронуты "весы" игровых ивентов.
+    - type: Tweak
+      message: RampingStationEventScheduler начинает свою работу только от 30 игроков.
+    - type: Fix
+      message: Исправлено кол-во выпадающих ивентов в 2 раза.
+    - type: Remove
+      message: >-
+        Удалены ВСЕ шаттлы из ивентов, ввиду не совсем корректной работы с
+        RampingStationEventScheduler.
+  id: 18
+  time: '2025-12-18T08:30:54.0000000+00:00'
