@@ -1874,7 +1874,7 @@ namespace Content.Client.Lobby.UI
             // SpriteViewW.InvalidateMeasure();
             SpriteView.InvalidateMeasure();
         }
-        // end Goobstation: port EE height/width sliders # Maid gth
+        // end Goobstation: port EE height/width sliders # Maid
 
         private void UpdateHairPickers()
         {
