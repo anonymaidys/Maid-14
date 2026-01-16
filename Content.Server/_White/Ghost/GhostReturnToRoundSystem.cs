@@ -1,7 +1,9 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
+using Content.Server.Mind;
 using Content.Shared._White;
+using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
 using Content.Shared.Ghost;
@@ -14,6 +16,7 @@ namespace Content.Server._White.Ghost;
 
 public sealed class GhostReturnToRoundSystem : EntitySystem
 {
+    [Dependency] private readonly MindSystem _mindSystem = default!;
     [Dependency] private readonly IChatManager _chatManager = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
@@ -56,9 +59,21 @@ public sealed class GhostReturnToRoundSystem : EntitySystem
             return;
         }
 
-        var deathTime = EnsureComp<GhostComponent>(uid).TimeOfDeath;
-        var timeUntilRespawn = _cfg.GetCVar(WhiteCVars.GhostRespawnTime);
-        var timePast = (_gameTiming.CurTime - deathTime).TotalMinutes;
+        if (!TryComp<GhostComponent>(uid, out var ghostComp))
+        {
+            message = Loc.GetString("ghost-respawn-error", ("players", maxPlayers));
+            wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", message));
+            return;
+        }
+
+        var deathTime = ghostComp.TimeOfDeath;
+
+        if (_mindSystem.TryGetMind(uid, out _, out var mind) && mind.TimeOfDeath.HasValue)
+            deathTime = mind.TimeOfDeath.Value;
+
+        var timeUntilRespawn = TimeSpan.FromMinutes(_cfg.GetCVar(WhiteCVars.GhostRespawnTime));
+        var timePast = _gameTiming.CurTime - deathTime;
+
         if (timePast >= timeUntilRespawn)
         {
             var ticker = Get<GameTicker>();
@@ -75,7 +90,11 @@ public sealed class GhostReturnToRoundSystem : EntitySystem
             return;
         }
 
-        message = Loc.GetString("ghost-respawn-time-left", ("time", (int) (timeUntilRespawn - timePast)));
+        var timeLeft = timeUntilRespawn - timePast;
+        message = timeLeft.Minutes > 0
+            ? Loc.GetString("ghost-respawn-minutes-left", ("time", timeLeft.Minutes))
+            : Loc.GetString("ghost-respawn-seconds-left", ("time", timeLeft.Seconds));
+
         wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", message));
     }
 }
