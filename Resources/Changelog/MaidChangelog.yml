@@ -235,6 +235,10 @@ Entries:
   changes:
     - type: Remove
       message: Слайдеры размера персонажа отключены.
+  id: 21
+  time: '2026-01-24T11:09:44.0000000+00:00'
+- author: KLeymi
+  changes:
     - type: Remove
       message: >-
         Пачка звуков взаимодействия с рюкзаками, тулбоксами, таблетницами и
@@ -245,18 +249,34 @@ Entries:
       message: Звуки открытия и закрытия шкафов.
     - type: Tweak
       message: Космомедипен вернулся в аварийные наборы.
+  id: 22
+  time: '2026-01-24T11:10:44.0000000+00:00'    
+- author: shad4338
+  changes:    
     - type: Tweak
       message: Спрайты кровотечения в панели состояния.
     - type: Tweak
       message: Спрайты беспалых перчаток теперь чёрные.
+  id: 23
+  time: '2026-01-24T11:12:44.0000000+00:00'    
+- author: xsainteer
+  changes: 
     - type: Add
       message: Нижнее бельё
+  id: 24
+  time: '2026-01-24T11:12:44.0000000+00:00'
+- author: Warete
+  changes:   
     - type: Add
       message: Параллакс на Wonderbox
     - type: Add
       message: Кнопка возвращения в раунд
     - type: Remove
       message: Ghostbar / ГостБар
+  id: 25
+  time: '2026-01-24T11:15:44.0000000+00:00'
+- author: Kakava
+  changes: 
     - type: Tweak
       message: Изменено наполнение шкафов глав отделов
     - type: Tweak
@@ -265,7 +285,11 @@ Entries:
       message: >-
         "Наши гениальные ученые выяснили что нужно X ударов чтобы человек умер"
         система.
+  id: 26
+  time: '2026-01-24T11:16:44.0000000+00:00'
+- author: HSKvees
+  changes: 
     - type: Fix
       message: Громкость TTS по умолчанию 0% -> 100%
-  id: 21
-  time: '2026-01-24T11:07:44.0000000+00:00'
+  id: 27
+  time: '2026-01-24T11:17:44.0000000+00:00'
