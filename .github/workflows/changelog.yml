@@ -54,6 +54,8 @@ jobs:
         continue-on-error: true
 
       - name: Commit Changelog
+        env: 
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN_CHAN }}
         run: |
           git add *.yml
           git commit -m "${{ vars.CHANGELOG_MESSAGE }} (#${{ env.PR_NUMBER }})"
