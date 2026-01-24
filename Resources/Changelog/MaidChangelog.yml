@@ -231,3 +231,41 @@ Entries:
       message: Added fun! MORE MORE
   id: 20
   time: '2026-01-24T10:50:02.0000000+00:00'
+- author: Aviu
+  changes:
+    - type: Remove
+      message: Слайдеры размера персонажа отключены.
+    - type: Remove
+      message: >-
+        Пачка звуков взаимодействия с рюкзаками, тулбоксами, таблетницами и
+        прочими.
+    - type: Remove
+      message: 'Система вариативности тональности звука при употреблении и питье. '
+    - type: Tweak
+      message: Звуки открытия и закрытия шкафов.
+    - type: Tweak
+      message: Космомедипен вернулся в аварийные наборы.
+    - type: Tweak
+      message: Спрайты кровотечения в панели состояния.
+    - type: Tweak
+      message: Спрайты беспалых перчаток теперь чёрные.
+    - type: Add
+      message: Нижнее бельё
+    - type: Add
+      message: Параллакс на Wonderbox
+    - type: Add
+      message: Кнопка возвращения в раунд
+    - type: Remove
+      message: Ghostbar / ГостБар
+    - type: Tweak
+      message: Изменено наполнение шкафов глав отделов
+    - type: Tweak
+      message: Изменен спрайт Полноценной гарнитуры СМО
+    - type: Remove
+      message: >-
+        "Наши гениальные ученые выяснили что нужно X ударов чтобы человек умер"
+        система.
+    - type: Fix
+      message: Громкость TTS по умолчанию 0% -> 100%
+  id: 21
+  time: '2026-01-24T11:07:44.0000000+00:00'
