@@ -15,3 +15,7 @@
 [color=#a4885c]AlignWall[/color] snaps to vertical halftiles.
 [color=#a4885c]AlignWallProper[/color] snaps the entity to the middle of the tile edges
 
+
+
+
+
