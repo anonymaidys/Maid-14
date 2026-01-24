@@ -77,8 +77,8 @@
       - Brain
       tags:
       - HighRiskItem
-    soundCooldown: 0
-    sound:
+    SoundCooldown: 0
+    Sound:
       path: /Audio/Ambience/Objects/crushing.ogg
       params:
         volume: 5

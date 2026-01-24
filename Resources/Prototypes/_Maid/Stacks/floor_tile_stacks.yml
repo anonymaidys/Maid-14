@@ -6,6 +6,6 @@
 
 - type: stack
   id: FloorTileWoodBrightPattern
-  name: stack-wood-patter-floor
+  name: stack-wood-pattern-floor
   spawn: FloorTileItemWoodBrightPattern
   maxCount: 30
