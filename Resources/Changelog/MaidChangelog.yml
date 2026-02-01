@@ -250,23 +250,23 @@ Entries:
     - type: Tweak
       message: Космомедипен вернулся в аварийные наборы.
   id: 22
-  time: '2026-01-24T11:10:44.0000000+00:00'    
+  time: '2026-01-24T11:10:44.0000000+00:00'
 - author: shad4338
-  changes:    
+  changes:
     - type: Tweak
       message: Спрайты кровотечения в панели состояния.
     - type: Tweak
       message: Спрайты беспалых перчаток теперь чёрные.
   id: 23
-  time: '2026-01-24T11:12:44.0000000+00:00'    
+  time: '2026-01-24T11:12:44.0000000+00:00'
 - author: xsainteer
-  changes: 
+  changes:
     - type: Add
       message: Нижнее бельё
   id: 24
   time: '2026-01-24T11:12:44.0000000+00:00'
 - author: Warete
-  changes:   
+  changes:
     - type: Add
       message: Параллакс на Wonderbox
     - type: Add
@@ -276,7 +276,7 @@ Entries:
   id: 25
   time: '2026-01-24T11:15:44.0000000+00:00'
 - author: Kakava
-  changes: 
+  changes:
     - type: Tweak
       message: Изменено наполнение шкафов глав отделов
     - type: Tweak
@@ -288,8 +288,14 @@ Entries:
   id: 26
   time: '2026-01-24T11:16:44.0000000+00:00'
 - author: HSKvees
-  changes: 
+  changes:
     - type: Fix
       message: Громкость TTS по умолчанию 0% -> 100%
   id: 27
   time: '2026-01-24T11:17:44.0000000+00:00'
+- author: HSKveez
+  changes:
+    - type: Tweak
+      message: Изменен список доступных голосов
+  id: 28
+  time: '2026-02-01T13:54:19.0000000+00:00'
