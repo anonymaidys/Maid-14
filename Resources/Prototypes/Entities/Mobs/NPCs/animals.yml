@@ -1642,7 +1642,7 @@
     templateId: monkey
     speciesId: monkey
   - type: Deathgasp
-    prototype: MonkeyDeathgasp
+#    prototype: MonkeyDeathgasp #Maid
   - type: Cuffable
   - type: RotationVisuals
     defaultRotation: 90
@@ -2038,7 +2038,7 @@
 
 - type: entity
   name: mouse
-  parent: SimpleMobBase
+  parent: SimpleMobBaseNoDeathgasp #Maid
   id: MobMouse
   description: Squeak!
   components:
@@ -2103,7 +2103,7 @@
         layer:
         - SmallMobLayer
   - type: MobState
-  - type: Deathgasp
+#  - type: Deathgasp #Maid
   - type: MobStateActions
     actions:
       Critical:
