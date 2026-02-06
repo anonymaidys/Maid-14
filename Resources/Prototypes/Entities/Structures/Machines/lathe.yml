@@ -657,7 +657,7 @@
     - MechEquipment
     # Goobstation Packs
     - MechPartsGoob
-    - Modsuits
+#    - Modsuits #Maid
     - PowerCages
     - BorgModulesGoob
     - BasicCybernetics
@@ -881,6 +881,7 @@
     - Chemistry
     # Goobstation Packs
     - Surgery
+    - MedicalBoardsGoob #Maid
     - MedicalCybernetics
     - EnvirosuitExtinguisherRefill
     - MedicalMisc
