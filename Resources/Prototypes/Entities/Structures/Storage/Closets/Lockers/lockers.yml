@@ -631,7 +631,7 @@
 #    - id: VehicleClowncarTrainee #Maid edit start
 #    - id: ClownMegaphone # goob - loudspeakers
     - id: ClothingUniformJumpsuitClown
-    - id: ClownMegaphClothingUniformJumpskirtClownone
+    - id: ClothingUniformJumpskirtClown
     - id: ClothingShoesClown
     - id: BikeHorn
     - id: RubberStampClown
